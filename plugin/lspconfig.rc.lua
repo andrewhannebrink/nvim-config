@@ -15,7 +15,7 @@ end
 
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
-  filetypes = { "typescript", "typescriptreact", "typescript.tsx" },
+  filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
   cmd = { "typescript-language-server", "--stdio" }
 }
 
@@ -48,3 +48,9 @@ nvim_lsp.pylsp.setup {
     }
   }
 }
+
+--nvim_lsp.eslint.setup {
+--  settings = {
+--    filetypes = { "javascript", "javascriptreact", "javascript.jsx" }
+--  }
+--}
