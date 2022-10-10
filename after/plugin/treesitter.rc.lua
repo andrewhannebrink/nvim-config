@@ -12,6 +12,8 @@ ts.setup {
   },
   ensure_installed = {
     'tsx',
+    'javascript',
+    'python',
     'lua',
     'json',
     'css'

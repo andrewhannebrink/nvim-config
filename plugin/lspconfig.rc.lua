@@ -35,3 +35,16 @@ nvim_lsp.sumneko_lua.setup {
     }
   }
 }
+
+nvim_lsp.pylsp.setup {
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = { 'W391' },
+          maxLineLength = 100
+        }
+      }
+    }
+  }
+}
