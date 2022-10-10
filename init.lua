@@ -1,5 +1,5 @@
-print('init.lua loaded')
 require('base')
 require('plugins')
 require('maps')
-require('tree')
+--require('tree')
+--require('lspconfig.rc')
