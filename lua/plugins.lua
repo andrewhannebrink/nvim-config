@@ -25,9 +25,18 @@ packer.startup(function(use)
   use {
     'shaunsingh/nyoom.nvim'
   }
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+--  use {
+--    'junegunn/fzf.vim'
+--  }
+--  use { 'ibhagwan/fzf-lua',
+--    -- optional for icon support
+--    requires = { 'kyazdani42/nvim-web-devicons' }
+--  }
 end)
-
---Plug 'nvim-lua/plenary.nvim'
---Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-
-
