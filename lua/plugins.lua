@@ -13,11 +13,15 @@ packer.startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'tanvirtin/monokai.nvim'
   use 'drewtempelmeyer/palenight.vim'
-  use 'shaunsingh/nyoom.nvim'
+  use 'L3MON4D3/LuaSnip' --Snippet Engine
+  use 'onsails/lspkind-nvim' -- VSCode like pictograms
+  use 'hrsh7th/cmp-buffer' --nvim cmp for buffer words
+  use 'hrsh7th/cmp-nvim-lsp' --nvim-cmp source for nvims builtin lsp
+  use 'hrsh7th/nvim-cmp' --Completion
   use 'neovim/nvim-lspconfig' -- LSP
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
   use {
     'nvim-tree/nvim-tree.lua',
@@ -26,11 +30,4 @@ packer.startup(function(use)
     },
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
---  use {
---    'junegunn/fzf.vim'
---  }
---  use { 'ibhagwan/fzf-lua',
---    -- optional for icon support
---    requires = { 'kyazdani42/nvim-web-devicons' }
---  }
 end)

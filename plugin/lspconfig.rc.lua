@@ -29,7 +29,8 @@ nvim_lsp.sumneko_lua.setup {
       },
       workspace = {
         --Make the server aware of neovim runtime files
-        library = vim.api.nvim_get_runtime_file("", true)
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false
       }
     }
   }
