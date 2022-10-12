@@ -19,6 +19,8 @@ packer.startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp' --nvim-cmp source for nvims builtin lsp
   use 'hrsh7th/nvim-cmp' --Completion
   use 'neovim/nvim-lspconfig' -- LSP
+  use 'lewis6991/gitsigns.nvim'
+  use 'dinhhuy258/git.nvim' -- Git blame and browse
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }
