@@ -17,7 +17,7 @@ keymap.set('n', '<C-k>', '<C-w>s')
 --keymap.set('i', '(', '()<left>')
 --keymap.set('i', '[', '[]<left>')
 --keymap.set('i', '{', '{}<left>')
-keymap.set('i', '{<CR>', '{<CR>}<esc>o')
+--keymap.set('i', '{<CR>', '{<CR>}<esc>o')
 
 --do not yank with x
 keymap.set('n', 'x', '"_x')

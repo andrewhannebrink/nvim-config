@@ -9,6 +9,7 @@ vim.cmd [[ packadd packer.nvim ]]
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
+  use 'hoob3rt/lualine.nvim'
   use 'tanvirtin/monokai.nvim'
   use 'drewtempelmeyer/palenight.vim'
   use 'L3MON4D3/LuaSnip' --Snippet Engine
