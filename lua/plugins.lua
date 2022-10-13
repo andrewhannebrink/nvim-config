@@ -10,6 +10,7 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use 'folke/tokyonight.nvim'
   use 'hoob3rt/lualine.nvim'
+  use 'glepnir/lspsaga.nvim' --LSP UIs
   use 'tanvirtin/monokai.nvim'
   use 'drewtempelmeyer/palenight.vim'
   use 'L3MON4D3/LuaSnip' --Snippet Engine
