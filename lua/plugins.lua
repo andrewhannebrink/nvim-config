@@ -23,6 +23,8 @@ packer.startup(function(use)
   use 'dinhhuy258/git.nvim' -- Git blame and browse
   use 'windwp/nvim-autopairs'
   use 'windwp/nvim-ts-autotag'
+  use 'williamboman/mason.nvim' -- LSP explorer. Using for tailwind
+  use 'williamboman/mason-lspconfig.nvim' 
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }
