@@ -18,5 +18,5 @@ vim.opt.wrap = false
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules' }
 vim.opt.termguicolors = true
-vim.cmd('colorscheme tokyonight-night')
+vim.cmd('colorscheme github_dark_default')
 vim.o.shortmess = vim.o.shortmess .. "A"
