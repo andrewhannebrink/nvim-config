@@ -12,6 +12,7 @@ packer.startup(function(use)
   use 'hoob3rt/lualine.nvim'
   use 'glepnir/lspsaga.nvim' --LSP UIs
   use 'projekt0n/github-nvim-theme'
+  use "ellisonleao/gruvbox.nvim" 
   use 'tanvirtin/monokai.nvim'
   use 'drewtempelmeyer/palenight.vim'
   use 'L3MON4D3/LuaSnip' --Snippet Engine
@@ -26,6 +27,8 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'williamboman/mason.nvim' -- LSP explorer. Using for tailwind
   use 'williamboman/mason-lspconfig.nvim' 
+  --use {'neoclide/coc.nvim', branch = 'release'}
+  --use 'simrat39/rust-tools.nvim' --Rust lsp
   use {
     'nvim-telescope/telescope.nvim', tag = '0.1.0',
     requires = { { 'nvim-lua/plenary.nvim' } }

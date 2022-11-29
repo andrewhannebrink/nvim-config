@@ -17,6 +17,9 @@ vim.opt.si = true
 vim.opt.wrap = false 
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules' }
-vim.opt.termguicolors = true
-vim.cmd('colorscheme github_dark_default')
+--vim.opt.termguicolors = true
+--vim.cmd('colorscheme github_dark_default')
+vim.cmd('colorscheme tokyonight-night')
+--vim.cmd('set background=dark') -- or light if you want light mode
+--vim.cmd('colorscheme gruvbox')
 vim.o.shortmess = vim.o.shortmess .. "A"
