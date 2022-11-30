@@ -12,7 +12,7 @@ ts.setup {
     'tsx',
     'javascript',
     'python',
-    'lua',
+    --'lua',
     'json',
     'css',
     'html'

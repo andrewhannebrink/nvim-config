@@ -2,6 +2,7 @@ vim.cmd('autocmd!')
 vim.scriptencoding = 'utf-8'
 vim.opt.encoding = 'utf-8'
 vim.opt.fileencoding = 'utf-8'
+--vim.cmd('let g:airline_powerline_fonts = 1')
 vim.wo.relativenumber = true
 vim.wo.number = true
 vim.opt.title = true
@@ -17,9 +18,11 @@ vim.opt.si = true
 vim.opt.wrap = false 
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules' }
---vim.opt.termguicolors = true
 --vim.cmd('colorscheme github_dark_default')
-vim.cmd('colorscheme tokyonight-night')
+--vim.cmd('colorscheme tokyonight-night')
 --vim.cmd('set background=dark') -- or light if you want light mode
 --vim.cmd('colorscheme gruvbox')
+vim.opt.termguicolors = true
+--vim.cmd('colorscheme tokyonight-night')
+vim.cmd('colorscheme elflord')
 vim.o.shortmess = vim.o.shortmess .. "A"
