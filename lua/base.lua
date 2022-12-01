@@ -24,5 +24,5 @@ vim.opt.wildignore:append { '*/node_modules' }
 --vim.cmd('colorscheme gruvbox')
 vim.opt.termguicolors = true
 --vim.cmd('colorscheme tokyonight-night')
-vim.cmd('colorscheme elflord')
+vim.cmd('colorscheme fahrenheit')
 vim.o.shortmess = vim.o.shortmess .. "A"
