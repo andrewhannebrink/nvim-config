@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "/Users/brink/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rust-tools.nvim"] = {
+    loaded = true,
+    path = "/Users/brink/.local/share/nvim/site/pack/packer/start/rust-tools.nvim",
+    url = "https://github.com/simrat39/rust-tools.nvim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/brink/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -198,6 +203,21 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/brink/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["twilight256.vim"] = {
+    loaded = true,
+    path = "/Users/brink/.local/share/nvim/site/pack/packer/start/twilight256.vim",
+    url = "https://github.com/vim-scripts/twilight256.vim"
+  },
+  ["vim-fahrenheit"] = {
+    loaded = true,
+    path = "/Users/brink/.local/share/nvim/site/pack/packer/start/vim-fahrenheit",
+    url = "https://github.com/fcpg/vim-fahrenheit"
+  },
+  ["vim-moonfly-colors"] = {
+    loaded = true,
+    path = "/Users/brink/.local/share/nvim/site/pack/packer/start/vim-moonfly-colors",
+    url = "https://github.com/bluz71/vim-moonfly-colors"
   }
 }
 

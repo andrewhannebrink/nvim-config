@@ -14,28 +14,30 @@ local on_attach = function(client, bufnr)
   --  end
 end
 
+nvim_lsp.ocamllsp.setup({})
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
   cmd = { "typescript-language-server", "--stdio" }
 }
 
---nvim_lsp.sumneko_lua.setup {
---  on_attach = on_attach,
---  settings = {
---    Lua = {
---      diagnostics = {
---        --get lang server to recognize the vim global
---        globals = { 'vim' }
---      },
---      workspace = {
---        --Make the server aware of neovim runtime files
---        library = vim.api.nvim_get_runtime_file("", true),
---        checkThirdParty = false
---      }
---    }
---  }
---}
+nvim_lsp.sumneko_lua.setup {
+  on_attach = on_attach,
+  settings = {
+    Lua = {
+      diagnostics = {
+        --get lang server to recognize the vim global
+        globals = { 'vim' }
+      },
+      workspace = {
+        --Make the server aware of neovim runtime files
+        library = vim.api.nvim_get_runtime_file("", true),
+        checkThirdParty = false
+      }
+    }
+  }
+}
 
 nvim_lsp.pylsp.setup {
   settings = {
@@ -73,6 +75,12 @@ nvim_lsp.pylsp.setup {
 --})
 
   rt.setup({
+    tools = {
+      inlay_hints = {
+        -- Only show inlay hints for the current line
+        only_current_line = true,
+      }
+    },
     server = {
       on_attach = function(_, bufnr)
         -- Hover actions
@@ -82,3 +90,4 @@ nvim_lsp.pylsp.setup {
       end,
     },
   })
+

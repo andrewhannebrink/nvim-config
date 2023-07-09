@@ -8,9 +8,11 @@ vim.cmd [[ packadd packer.nvim ]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
+  use 'bluz71/vim-moonfly-colors'
   use 'folke/tokyonight.nvim'
+  use 'vim-scripts/twilight256.vim'
   use 'hoob3rt/lualine.nvim'
-  use 'glepnir/lspsaga.nvim' --LSP UIs
+  use "glepnir/lspsaga.nvim"
   use 'projekt0n/github-nvim-theme'
   use "ellisonleao/gruvbox.nvim" 
   use 'fcpg/vim-fahrenheit'
