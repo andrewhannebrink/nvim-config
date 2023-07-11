@@ -5,6 +5,7 @@ keymap.set('n', '<C-p>', ':Telescope find_files<CR>')
 keymap.set('n', '<C-f>', ':Telescope live_grep<CR>')
 keymap.set('n', '<C-e>', ':NvimTreeToggle<CR> ')
 keymap.set('n', 'gd', ':Telescope lsp_references<CR>')
+keymap.set('n', 'gs', ':Telescope lsp_implementationg<CR>')
 
 --split navigation
 keymap.set('n', '<Space>', '<C-w>w')
