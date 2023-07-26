@@ -30,6 +30,7 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'williamboman/mason.nvim' -- LSP explorer. Using for tailwind
   use 'williamboman/mason-lspconfig.nvim' 
+  use 'leafOfTree/vim-svelte-plugin'
   --use {'neoclide/coc.nvim', branch = 'release'}
   use 'simrat39/rust-tools.nvim' --Rust lsp
   use {

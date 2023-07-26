@@ -16,6 +16,8 @@ end
 
 nvim_lsp.ocamllsp.setup({})
 
+nvim_lsp.svelte.setup{}
+
 nvim_lsp.tsserver.setup {
   on_attach = on_attach,
   filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
