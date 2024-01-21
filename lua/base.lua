@@ -25,5 +25,6 @@ vim.opt.wildignore:append { '*/node_modules' }
 vim.opt.termguicolors = true
 --vim.cmd('colorscheme tokyonight-night')
 --vim.cmd('colorscheme twilight256')
-vim.cmd('colorscheme moonfly')
+--vim.cmd('colorscheme moonfly')
+vim.cmd('colorscheme solarized-osaka')
 vim.o.shortmess = vim.o.shortmess .. "A"
