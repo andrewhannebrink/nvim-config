@@ -21,13 +21,21 @@ require("mason").setup()
 require("mason-lspconfig").setup({
   ensure_installed = { 'tailwindcss' }
 })
+require("mason-lspconfig").setup({
+  ensure_installed = { 'prismals' }
+})
 require'lspconfig'.svelte.setup{} 
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.tailwindcss.setup{}
+require'lspconfig'.prismals.setup{}
 
 require('nvim-ts-autotag').setup()
 
-require('lspsaga').setup({})
+require('lspsaga').setup({
+  lightbulb = {
+    enable = false
+  }
+})
 local opts = {noremap = true, silent = true}
 vim.keymap.set('n', '<C-m>', '<Cmd>Lspsaga diagnostic_jump_next<cr>', opts)
 vim.keymap.set('n', 'K', '<Cmd>Lspsaga hover_doc<cr>', opts)   
@@ -65,6 +73,7 @@ vim.cmd [[
   set completeopt=menuone,noinsert,noselect
   highlight! default link CmpItemKind CmpItemMenuDefault
 ]]
+
 
 require('lualine').setup {
   options = {

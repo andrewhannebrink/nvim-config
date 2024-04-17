@@ -18,7 +18,8 @@ return {
           "python",
           "rust",
           "html",
-          "svelte"
+          "svelte",
+          "prisma"
         },
         sync_install = false,
         highlight = { enable = true },
