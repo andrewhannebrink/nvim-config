@@ -19,7 +19,8 @@ return {
           "rust",
           "html",
           "svelte",
-          "prisma"
+          "prisma",
+          "go"
         },
         sync_install = false,
         highlight = { enable = true },

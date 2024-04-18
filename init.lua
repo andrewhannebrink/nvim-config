@@ -28,6 +28,7 @@ require'lspconfig'.svelte.setup{}
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.prismals.setup{}
+require'lspconfig'.gopls.setup{}
 
 require('nvim-ts-autotag').setup()
 
