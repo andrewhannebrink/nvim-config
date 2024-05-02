@@ -20,7 +20,8 @@ return {
           "html",
           "svelte",
           "prisma",
-          "go"
+          "go",
+          "graphql"
         },
         sync_install = false,
         highlight = { enable = true },

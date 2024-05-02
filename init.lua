@@ -24,11 +24,30 @@ require("mason-lspconfig").setup({
 require("mason-lspconfig").setup({
   ensure_installed = { 'prismals' }
 })
+require("mason-lspconfig").setup({
+  ensure_installed = { 'pylsp' }
+})
+require("mason-lspconfig").setup({
+  ensure_installed = { 'graphql' }
+})
 require'lspconfig'.svelte.setup{} 
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.prismals.setup{}
 require'lspconfig'.gopls.setup{}
+require'lspconfig'.graphql.setup{}
+require'lspconfig'.pylsp.setup{
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'E501'}
+          --maxLineLength = 100
+        }
+      }
+    }
+  }
+}
 
 require('nvim-ts-autotag').setup()
 
