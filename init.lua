@@ -41,7 +41,8 @@ require'lspconfig'.pylsp.setup{
     pylsp = {
       plugins = {
         pycodestyle = {
-          ignore = {'E501'}
+          enabled = false,
+          --ignore = {'E501'}
           --maxLineLength = 100
         }
       }
