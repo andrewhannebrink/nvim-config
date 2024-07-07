@@ -4,6 +4,8 @@ vim.opt.clipboard:append { 'unnamedplus' }
 
 --file finding
 keymap.set('n', '<C-p>', ':Telescope find_files<CR>')
+--map up arrow to telescope find files
+keymap.set('n', '<Up>', ':Telescope find_files<CR>')
 keymap.set('n', '<C-f>', ':Telescope live_grep<CR>')
 keymap.set('n', '<C-e>', ':NvimTreeToggle<CR> ')
 keymap.set('n', 'gd', ':Telescope lsp_references<CR>')
