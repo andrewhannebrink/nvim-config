@@ -26,5 +26,6 @@ vim.opt.termguicolors = true
 --vim.cmd('colorscheme tokyonight-night')
 --vim.cmd('colorscheme twilight256')
 --vim.cmd('colorscheme moonfly')
-vim.cmd('colorscheme solarized-osaka')
+--vim.cmd('colorscheme solarized-osaka')
+vim.cmd('colorscheme rose-pine')
 vim.o.shortmess = vim.o.shortmess .. "A"
