@@ -14,7 +14,6 @@ keymap.set('n', 'gn', ':Telescope lsp_definitions<CR>')
 --split navigation
 keymap.set('n', '<Space>', '<C-w>w')
 keymap.set('n', '<C-j>', '<C-w>v')
---keymap.set('n', '<C-k>', '<C-w>s')
 
 --auto tagging
 --removed in favor of autotag plugin
