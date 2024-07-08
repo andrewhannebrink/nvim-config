@@ -20,8 +20,9 @@ require("lazy").setup("plugins", {})
 
 require("mason").setup()
 require("mason-lspconfig").setup({
-  ensure_installed = { 'tailwindcss' }
+  ensure_installed = { 'tailwindcss', 'prismals', 'pylsp', 'graphql'  }
 })
+--[[
 require("mason-lspconfig").setup({
   ensure_installed = { 'prismals' }
 })
@@ -31,12 +32,14 @@ require("mason-lspconfig").setup({
 require("mason-lspconfig").setup({
   ensure_installed = { 'graphql' }
 })
+]]--
 require'lspconfig'.svelte.setup{} 
 require'lspconfig'.tsserver.setup{}
 require'lspconfig'.tailwindcss.setup{}
 require'lspconfig'.prismals.setup{}
 require'lspconfig'.gopls.setup{}
 require'lspconfig'.graphql.setup{}
+require'lspconfig'.lua_ls.setup{}
 require'lspconfig'.pylsp.setup{
   settings = {
     pylsp = {
@@ -106,7 +109,7 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     --theme = 'solarized-osaka',
-    theme = 'rose-pine',
+    theme = 'everforest',
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     disabled_filetypes = {},

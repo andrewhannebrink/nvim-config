@@ -27,5 +27,10 @@ vim.opt.termguicolors = true
 --vim.cmd('colorscheme twilight256')
 --vim.cmd('colorscheme moonfly')
 --vim.cmd('colorscheme solarized-osaka')
-vim.cmd('colorscheme rose-pine')
+--vim.cmd('colorscheme rose-pine')
+--vim.cmd("colorscheme miasma")
+--vim.cmd('colorscheme darkrose')
+vim.cmd('let g:everforest_transparent_background = 2')
+vim.cmd('colorscheme everforest')
 vim.o.shortmess = vim.o.shortmess .. "A"
+--vim.o.background = 'none'
