@@ -8,7 +8,15 @@ return {
     lspconfig.prismals.setup{}
     lspconfig.gopls.setup{}
     lspconfig.graphql.setup{}
-    lspconfig.lua_ls.setup{}
+    lspconfig.lua_ls.setup{
+      settings = {
+        Lua = {
+          diagnostics = {
+            globals = { 'vim' }
+          }
+        }
+      }
+    }
     lspconfig.pylsp.setup{
       settings = {
         pylsp = {
