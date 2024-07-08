@@ -1,5 +1,6 @@
 
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+print('lazypath', lazypath)
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -95,6 +96,11 @@ vim.cmd [[
   highlight! default link CmpItemKind CmpItemMenuDefault
 ]]
 
+require("rose-pine").setup({
+  styles = {
+    transparency = true
+  }
+})
 
 require('lualine').setup {
   options = {
