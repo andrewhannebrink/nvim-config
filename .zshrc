@@ -122,10 +122,15 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+
 bindkey "^[[A" history-search-backward
-bindkey "^P" history-search-backward
+bindkey "^P" history-beginning-search-backward-end
 bindkey "^[[B" history-search-forward
-bindkey "^N" history-search-forward
+bindkey "^N" history-beginning-search-forward-end
 bindkey "^[n" backward-word
 bindkey "^[p" forward-word
 bindkey "^[k" backward-char
