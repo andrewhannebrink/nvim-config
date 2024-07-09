@@ -13,12 +13,21 @@ TERM = "xterm-256color"
 [window]
 #padding.x = 10
 #padding.y = 100
-
 decorations = "Buttonless"
-
 option_as_alt = "Both"
 
 [font]
 normal.family = "MesloLGS Nerd Font Mono"
-
 size = 13
+
+[keyboard]
+bindings = [
+  { key = "p", mods = "Control", chars = "\u001b\u005b\u0041" },
+  { key = "n", mods = "Control", chars = "\u001b\u005b\u0042" },
+  { key = "p", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0043" },
+  { key = "n", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0044" },
+  { key = "l", mods = "Alt", chars = "\u001b\u005b\u0043" },
+  { key = "k", mods = "Alt", chars = "\u001b\u005b\u0044" },
+  { key = "e", mods = "Alt", chars = "\u001b\u0064" },
+  { key = "w", mods = "Alt", chars = "\u001b\u007f" }
+]

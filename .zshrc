@@ -127,16 +127,16 @@ autoload -U history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
 
-bindkey "^[[A" history-search-backward
-bindkey "^P" history-beginning-search-backward-end
-bindkey "^[[B" history-search-forward
-bindkey "^N" history-beginning-search-forward-end
-bindkey "^[n" backward-word
-bindkey "^[p" forward-word
-bindkey "^[k" backward-char
-bindkey "^[l" forward-char
-bindkey "^[w" backward-kill-word
-bindkey "^[e" kill-word
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
+#bindkey "^[n" backward-word
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
+#bindkey "^[p" forward-word
+#bindkey "^[k" backward-char
+#bindkey "^[l" forward-char
+#bindkey "^[w" backward-kill-word
+#bindkey "^[e" kill-word
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
