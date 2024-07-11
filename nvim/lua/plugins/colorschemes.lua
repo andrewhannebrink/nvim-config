@@ -18,6 +18,18 @@ return {
     end
   },
   {
+    "slugbyte/lackluster.nvim",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require"lackluster".setup{
+        tweak_background = {
+          normal = 'none',    -- transparent
+        }
+      }
+    end
+  },
+  {
     "water-sucks/darkrose.nvim",
     lazy = false,
     priority = 1000,
@@ -26,5 +38,15 @@ return {
     "xero/miasma.nvim",
     lazy = false,
     priority = 1000,
+  },
+  {
+    'AlexvZyl/nordic.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require 'nordic' .setup {
+        transparent_bg = true 
+      }
+    end
   }
 }

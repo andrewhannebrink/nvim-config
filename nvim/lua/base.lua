@@ -15,12 +15,12 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.ai = true
 vim.opt.si = true
-vim.opt.wrap = false 
+vim.opt.wrap = false
 vim.opt.path:append { '**' }
 vim.opt.wildignore:append { '*/node_modules' }
 
 vim.opt.termguicolors = true
-theme = 'solarized-osaka'
+theme = 'everforest'
 vim.cmd('colorscheme ' .. theme)
 
 vim.o.shortmess = vim.o.shortmess .. "A"
