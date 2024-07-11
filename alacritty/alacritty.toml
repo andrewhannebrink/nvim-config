@@ -4,7 +4,7 @@ import = [
 
 [colors]
 #primary = { background = "#111111", foreground = "#999999" }
-primary = { background = "#111111", foreground = "#999999" }
+primary = { background = "#090909", foreground = "#999999" }
 
 
 [env]
@@ -22,12 +22,12 @@ size = 13
 
 [keyboard]
 bindings = [
-  { key = "p", mods = "Control", chars = "\u001b\u005b\u0041" },
-  { key = "n", mods = "Control", chars = "\u001b\u005b\u0042" },
-  { key = "p", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0043" },
-  { key = "n", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0044" },
+  { key = "p", mods = "Control", chars = "\u001b\u005b\u0041" }, # Map Ctrl+p to Up
+  { key = "n", mods = "Control", chars = "\u001b\u005b\u0042" }, # Map Ctrl+n to Down
+  { key = "p", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0043" }, # Map Alt+p to Alt+right
+  { key = "n", mods = "Alt", chars = "\u001b\u005b\u0031\u003b\u0033\u0044" }, # Map Alt+n to Alt+left
   { key = "l", mods = "Alt", chars = "\u001b\u005b\u0043" },
   { key = "k", mods = "Alt", chars = "\u001b\u005b\u0044" },
-  { key = "e", mods = "Alt", chars = "\u001b\u0064" },
+  { key = "e", mods = "Alt", chars = "\u001b\u0064" }, # Map Alt+e to Alt+d
   { key = "w", mods = "Alt", chars = "\u001b\u007f" }
 ]
