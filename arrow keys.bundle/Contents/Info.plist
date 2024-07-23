@@ -8,14 +8,14 @@
 	<string></string>
 	<key>CFBundleVersion</key>
 	<string></string>
-	<key>KLInfo_U.S. copy</key>
+	<key>KLInfo_U.S. copy 5</key>
 	<dict>
 		<key>TICapsLockLanguageSwitchCapable</key>
 		<false/>
 		<key>TISIconIsTemplate</key>
 		<false/>
 		<key>TISInputSourceID</key>
-		<string>org.sil.ukelele.keyboardlayout..u.s.copy</string>
+		<string>org.sil.ukelele.keyboardlayout..u.s.copy5</string>
 		<key>TISIntendedLanguage</key>
 		<string>en</string>
 	</dict>
