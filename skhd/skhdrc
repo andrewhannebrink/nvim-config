@@ -1,18 +1,19 @@
-hyper - e : yabai -m space --toggle show-desktop
+shift + ctrl + alt - e : yabai -m space --toggle show-desktop
+shift + ctrl + alt - p : yabai -m space --rotate 90
 
 ctrl - 0 : open -na 'google chrome'
 ctrl - return : open -na 'alacritty'
 
-hyper - h : yabai -m window --swap west
-hyper - j : yabai -m window --swap south
-hyper - k : yabai -m window --swap north
-hyper - l : yabai -m window --swap east
+shift + ctrl + alt - h : yabai -m window --swap west
+shift + ctrl + alt - j : yabai -m window --swap south
+shift + ctrl + alt - k : yabai -m window --swap north
+shift + ctrl + alt - l : yabai -m window --swap east
 
-hyper - m : yabai -m window --toggle zoom-fullscreen
+shift + ctrl + alt - m : yabai -m window --toggle zoom-fullscreen
 
 # focus window
-hyper - o : yabai -m window --focus next
-hyper - i : yabai -m window --focus prev
+shift + ctrl + alt - o : yabai -m window --focus next
+shift + ctrl + alt - i : yabai -m window --focus prev
 
 #cmd - return : osascript ~/.config/skhd/iterm.scpt
 
