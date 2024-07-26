@@ -24,3 +24,9 @@ theme = 'everforest'
 vim.cmd('colorscheme ' .. theme)
 
 vim.o.shortmess = vim.o.shortmess .. "A"
+
+--For obsidian
+vim.opt.conceallevel = 1
+
+--vim.cmd('intro')
+
