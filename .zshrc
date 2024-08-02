@@ -149,7 +149,7 @@ export LESS="-SRXF"
 export EDITOR="nvim"
 
 #Allows for exiting into new directory w/ yazi
-function yy() {
+function f() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
 	yazi "$@" --cwd-file="$tmp"
 	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
@@ -157,3 +157,6 @@ function yy() {
 	fi
 	rm -f -- "$tmp"
 }
+
+alias ai="aichat"
+alias n="nvim"
