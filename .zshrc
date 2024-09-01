@@ -136,7 +136,8 @@ bindkey "^[[1;3C" forward-word
 #bindkey "^[k" backward-char
 #bindkey "^[l" forward-char
 #bindkey "^[w" backward-kill-word
-#bindkey "^[e" kill-word
+bindkey '^[e' kill-word
+bindkey '^[^?' backward-kill-word
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
