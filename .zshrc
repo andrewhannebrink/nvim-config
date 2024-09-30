@@ -1,9 +1,17 @@
+set -x
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+if [ -r "${XDG_CONFIG_HOME}/shell/init" ]; then
+  source "${XDG_CONFIG_HOME}/shell/init"
+fi
+
+autoload -Uz compinit
+compinit
 
 alias python='python3'
 alias air='$(go env GOPATH)/bin/air'
@@ -123,21 +131,8 @@ setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
 
-autoload -U history-search-end
-zle -N history-beginning-search-backward-end history-search-end
-zle -N history-beginning-search-forward-end history-search-end
 
-bindkey "^[[A" history-beginning-search-backward-end
-bindkey "^[[B" history-beginning-search-forward-end
-#bindkey "^[n" backward-word
-bindkey "^[[1;3D" backward-word
-bindkey "^[[1;3C" forward-word
-#bindkey "^[p" forward-word
-#bindkey "^[k" backward-char
-#bindkey "^[l" forward-char
-#bindkey "^[w" backward-kill-word
-bindkey '^[e' kill-word
-bindkey '^[^?' backward-kill-word
+bindkey -v
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
@@ -159,5 +154,24 @@ function f() {
 	rm -f -- "$tmp"
 }
 
+autoload -U history-search-end
+zle -N history-beginning-search-backward-end history-search-end
+zle -N history-beginning-search-forward-end history-search-end
+bindkey "^[[A" history-beginning-search-backward-end
+bindkey "^[[B" history-beginning-search-forward-end
+bindkey "^[n" backward-word
+
+bindkey "^[[1;3D" backward-word
+bindkey "^[[1;3C" forward-word
+
+bindkey "^[p" forward-word
+#bindkey "^[k" backward-char
+#bindkey "^[l" forward-char
+#bindkey "^[w" backward-kill-word
+bindkey '^[e' kill-word
+bindkey '^[^?' backward-kill-word
+
 alias ai="aichat"
 alias n="nvim"
+
+set +x
